@@ -1,0 +1,16 @@
+reset
+set terminal png size 300,300 enhanced font 'Courier,11'
+set output "/home1/juhri/research/Au111/energy/Band_Au11.png"
+set style data lines
+set nokey
+set zeroaxis
+set ytics 1
+set mytics 5
+set xra [0.000000:1.819078]
+set yra [-5.437506:5.136303]
+set ylabel "eV"
+set xtics ("M" 0.000000, "G" 0.665829, "K" 1.434662, "M" 1.819078)
+plot "/home1/juhri/research/Au111/energy/Au111Surface.BANDDAT1"
+pause -1
+
+
